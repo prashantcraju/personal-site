@@ -79,18 +79,42 @@
                         <!-- Software -->
                         <article id="software">
                             <h2 class="major">Software</h2>
-                            <p>Shesha: Self-Consistency Metrics for Representational Stability.</p>
-                            <div style="display:flex; align-items:center; gap:1.5em;">
-                                <ul class="icons" style="margin:0; padding:0;">
-                                    <li><a href="https://github.com/prashantcraju/shesha" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                                    <li><a href="https://pypi.org/project/shesha-geometry/" class="icon brands fa-python"><span class="label">PyPI</span></a></li>
+                            <p><b>Shesha: Self-Consistency Metrics for Representational Stability.</b></p>
+                            <div style="display:flex; align-items:center; gap:1em; flex-wrap:wrap; margin-bottom:1.5em;">
+                                <ul class="icons" style="margin:0; padding:0; list-style:none;">
+                                    <li style="display:inline;"><a href="https://github.com/prashantcraju/shesha" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                                    <li style="display:inline;"><a href="https://pypi.org/project/shesha-geometry/" class="icon brands fa-python"><span class="label">PyPI</span></a></li>
                                 </ul>
-                                <a href="https://pepy.tech/projects/shesha-geometry" style="display:inline-block; border: 1px solid white; border-radius: 20px; overflow:hidden;">
-                                    <img src="https://static.pepy.tech/personalized-badge/shesha-geometry?period=total&units=NONE&left_color=GRAY&right_color=BLUE&left_text=downloads" alt="PyPI Downloads" style="display:block;">
-                                </a>
-                                <a href="https://doi.org/10.5281/zenodo.18227453" style="display:inline-block; border: 1px solid white; border-radius: 20px; overflow:hidden;">
-                                    <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18227453.svg" alt="DOI" style="display:block;">
-                                </a>
+                                <a href="https://pepy.tech/projects/shesha-geometry"><img src="https://static.pepy.tech/personalized-badge/shesha-geometry?period=total&units=NONE&left_color=GRAY&right_color=BLUE&left_text=downloads" alt="PyPI Downloads" style="vertical-align:middle;"></a>
+                                <a href="https://doi.org/10.5281/zenodo.18227453"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18227453.svg" alt="DOI" style="vertical-align:middle;"></a>
+                            </div>
+                            <h5>Tutorials</h5>
+                            <p style="margin-bottom:0.75em;">Explore <code>shesha</code> with these interactive notebooks (each takes &lt; 5 minutes to run):</p>
+                            <div style="display:flex; flex-direction:column; gap:0.6em;">
+                                <div style="display:flex; align-items:baseline; gap:0.75em;">
+                                    <a href="https://colab.research.google.com/github/prashantcraju/shesha/blob/main/tutorials/llm_embeddings_tutorial.ipynb" style="flex-shrink:0;"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+                                    <span><b>LLM Embeddings</b> &mdash; Analyze embedding stability across layers and models using <code>feature_split</code>.</span>
+                                </div>
+                                <div style="display:flex; align-items:baseline; gap:0.75em;">
+                                    <a href="https://colab.research.google.com/github/prashantcraju/shesha/blob/main/tutorials/steering_vectors_tutorial.ipynb" style="flex-shrink:0;"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+                                    <span><b>Steering Vectors</b> &mdash; Compute steering vectors from contrastive pairs and measure their effectiveness and consistency.</span>
+                                </div>
+                                <div style="display:flex; align-items:baseline; gap:0.75em;">
+                                    <a href="https://colab.research.google.com/github/prashantcraju/shesha/blob/main/tutorials/vision_models_tutorial.ipynb" style="flex-shrink:0;"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+                                    <span><b>Vision Models</b> &mdash; Compare geometric stability and class separability across ResNets, ViTs, and other vision architectures.</span>
+                                </div>
+                                <div style="display:flex; align-items:baseline; gap:0.75em;">
+                                    <a href="https://colab.research.google.com/github/prashantcraju/shesha/blob/main/tutorials/drift_tutorial.ipynb" style="flex-shrink:0;"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+                                    <span><b>Representational Drift</b> &mdash; Measure drift caused by Gaussian noise injection and LoRA fine-tuning using <code>rdm_drift</code>.</span>
+                                </div>
+                                <div style="display:flex; align-items:baseline; gap:0.75em;">
+                                    <a href="https://colab.research.google.com/github/prashantcraju/shesha/blob/main/tutorials/training_drift_tutorial.ipynb" style="flex-shrink:0;"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+                                    <span><b>Training Dynamics</b> &mdash; Track geometric stability during model training to detect representation collapse or divergence.</span>
+                                </div>
+                                <div style="display:flex; align-items:baseline; gap:0.75em;">
+                                    <a href="https://colab.research.google.com/github/prashantcraju/shesha/blob/main/tutorials/crispr_tutorial.ipynb" style="flex-shrink:0;"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+                                    <span><b>CRISPR (Bio)</b> &mdash; Use <code>shesha.bio</code> to analyze stability and effect sizes in single-cell CRISPR perturbation experiments.</span>
+                                </div>
                             </div>
                         </article>
 
